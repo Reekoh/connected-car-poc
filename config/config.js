@@ -2,7 +2,7 @@
 
 var config = {
 	app: {
-		title: 'Reekoh - Connected Car Demo'
+		title: 'Reekoh - Connected Car (BETA)'
 	},
 	port: 18358,
 	demo: {
