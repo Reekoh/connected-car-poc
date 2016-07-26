@@ -59,7 +59,8 @@ electronApp.on('ready', function() {
 					nodeIntegration: false
 				},
 				width: 1024,
-				height: 768
+				height: 768,
+				icon: __dirname + '/public/images/app-icon.png'
 			});
 
 			electronConfig.setAppMenu(electronApp);
