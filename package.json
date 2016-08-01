@@ -9,9 +9,9 @@
     "start": "node ./start-electron.js",
     "clr_start": "sudo /etc/init.d/nscd restart && node ./start-electron.js",
     "build": "rm -rf dist/ && npm run build:dar && npm run build:lin && npm run build:win",
-    "build:lin": "electron-packager . gps --platform=linux --arch=x64 --out=dist --asar --overwrite",
-    "build:win": "electron-packager . gps --platform=win32 --arch=x64 --out=dist --asar --overwrite",
-    "build:dar": "electron-packager . gps --platform=darwin --arch=x64 --out=dist --asar --overwrite"
+    "build:lin": "electron-packager . 'Connected Car' --platform=linux --arch=x64 --out=dist --asar --overwrite --icon='/Users/benjsicam/git/reekoh/connected-car-poc/public/images/app-icon.png'",
+    "build:win": "electron-packager . 'Connected Car' --platform=win32 --arch=x64 --out=dist --asar --overwrite --icon='/Users/benjsicam/git/reekoh/connected-car-poc/public/images/app-icon.png'",
+    "build:dar": "electron-packager . 'Connected Car' --platform=darwin --arch=x64 --out=dist --asar --overwrite --icon='/Users/benjsicam/git/reekoh/connected-car-poc/public/images/app-icon.icns'"
   },
   "dependencies": {
     "async": "^1.5.2",
